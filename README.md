@@ -1,10 +1,28 @@
 # Hotel Review Sentiment Analysis + Complaint Theme Detection
 
-## 🚀 Live Application
+## 🏨 Hotel Review Intelligence
 
-[Launch Hotel Review Intelligence](https://aboubacar-hotel-review-intelligence.streamlit.app)
+An end-to-end machine-learning application that transforms hotel guest reviews into actionable operational intelligence for hotel management.
 
-Interactive Streamlit application that analyzes hotel guest reviews and returns sentiment, confidence score, operational priority, complaint category, responsible department, and recommended management action.
+🔗 **[Launch Live Application](https://aboubacar-hotel-review-intelligence.streamlit.app)**
+
+### Project Highlights
+
+- **20,491 hotel guest reviews** analyzed
+- **85.6% sentiment classification accuracy**
+- Classifies reviews as **Positive, Neutral, or Negative**
+- Calculates prediction **confidence**
+- Detects hotel **complaint categories**
+- Assigns the **responsible department**
+- Determines operational priority: **High, Medium, or Low**
+- Generates a **recommended management action**
+- Interactive application deployed with **Streamlit**
+- Built with **Python, pandas, scikit-learn, TF-IDF and Logistic Regression**
+
+### Business Value
+
+The application helps hotel managers move from manually reading thousands of reviews to automatically identifying customer sentiment, operational issues, responsible teams, and appropriate management responses.
+
 ## 📸 Application Demo
 
 The deployed application converts hotel guest feedback into actionable operational intelligence, including sentiment, confidence, priority, complaint category, responsible department, and recommended management action.
