@@ -220,15 +220,44 @@ def detect_complaint_category(text):
 # 7. Determine operational priority
 # ---------------------------------------------------------
 
-def determine_priority(sentiment, confidence):
+def determine_priority(review_text, sentiment, complaint_category, confidence):
+    text = review_text.lower()
 
+    severe_keywords = [
+        "mold",
+        "mould",
+        "filthy",
+        "extremely dirty",
+        "blood",
+        "bed bug",
+        "bedbug",
+        "unsafe",
+        "dangerous",
+        "theft",
+        "stolen",
+        "assault",
+        "harassment",
+        "not resolved",
+        "refused to help",
+        "smelled bad",
+        "smells bad"
+    ]
+
+    severe_issue = any(keyword in text for keyword in severe_keywords)
+
+    # Serious operational complaints override model confidence
+    if severe_issue:
+        return "High"
+
+    # Strong negative prediction
+    if sentiment == "Negative" and confidence >= 0.90:
+        return "High"
+
+    # Other negative reviews still require management attention
     if sentiment == "Negative":
-
-        if confidence >= 0.85:
-            return "High"
-
         return "Medium"
 
+    # Neutral feedback should be monitored
     if sentiment == "Neutral":
         return "Medium"
 
