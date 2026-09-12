@@ -1,5 +1,11 @@
 # Hotel Review Sentiment Analysis + Complaint Theme Detection
 
+## 🚀 Live Application
+
+[Launch Hotel Review Intelligence](https://aboubacar-hotel-review-intelligence.streamlit.app)
+
+Interactive Streamlit application that analyzes hotel guest reviews and returns sentiment, confidence score, operational priority, complaint category, responsible department, and recommended management action.
+
 ## Business Problem
 Hotels receive thousands of guest reviews. Manually reading them is slow and inconsistent.  
 This project automatically classifies reviews as Positive, Neutral, or Negative and extracts the most common complaint themes (room, staff, cleanliness, price, etc.).
