@@ -314,7 +314,9 @@ def analyze_review(review):
         )
 
     priority = determine_priority(
+        review,
         sentiment,
+        complaint_category,
         confidence
     )
 
