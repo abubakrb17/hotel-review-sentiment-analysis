@@ -5,6 +5,27 @@
 [Launch Hotel Review Intelligence](https://aboubacar-hotel-review-intelligence.streamlit.app)
 
 Interactive Streamlit application that analyzes hotel guest reviews and returns sentiment, confidence score, operational priority, complaint category, responsible department, and recommended management action.
+## 📸 Application Demo
+
+The deployed application converts hotel guest feedback into actionable operational intelligence, including sentiment, confidence, priority, complaint category, responsible department, and recommended management action.
+
+### 🔴 Negative Review — High Priority
+
+![Negative Review High Priority](images/negative-review-high-priority.png)
+
+The system identifies a serious cleanliness complaint, classifies the review as negative, assigns high operational priority, routes the issue to Housekeeping, and recommends an immediate service-recovery action.
+
+### 🟡 Neutral Review — Medium Priority
+
+![Neutral Review Medium Priority](images/neutral-review-medium-priority.png)
+
+Neutral guest feedback is classified for monitoring and assigned medium priority when no urgent operational escalation is required.
+
+### 🟢 Positive Review — Low Priority
+
+![Positive Review Low Priority](images/positive-review-low-priority.png)
+
+Positive guest feedback is recognized as low priority and can be retained for guest-experience monitoring and performance insights.
 
 ## Business Problem
 Hotels receive thousands of guest reviews. Manually reading them is slow and inconsistent.  
